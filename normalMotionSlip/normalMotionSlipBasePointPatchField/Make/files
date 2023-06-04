@@ -1,3 +1,0 @@
-normalMotionSlipBasePointPatchVectorField.C
-
-LIB = $(FOAM_USER_LIBBIN)/libnormalMotionSlipBasePointPatchVectorField
