@@ -1,3 +1,0 @@
-roughnessGenerator.C
-
-LIB = $(FOAM_USER_LIBBIN)/libroughnessGenerator
