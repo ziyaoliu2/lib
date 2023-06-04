@@ -1,4 +1,4 @@
-#Auxiliary libraries for OpenFOAM.
+Auxiliary libraries for OpenFOAM.
 
 Notes:  Source codes built with OpenFOAM-v1912
         Script mkInclude makes symbolic links  
@@ -12,13 +12,6 @@ steadyStateControl iterates to convergence without updating the timestamp or wri
 Files: steadyStateControl.H
        steadyStateControl.C
 
-normalMotionSlip: User library for mesh relaxation. Templated from OF slip class with added normal velocity. Needs a coded include file (roughMotion.H or gradCMotion.H)
-
-Files: normalMotionSlipFvPatchField/normalMotionSlipFvPatchField.H
-       normalMotionSlipFvPatchField/normalMotionSlipFvPatchField.C
-       normalMotionSlipPointPatchField/normalMotionSlipPointPatchField.H
-       normalMotionSlipPointPatchField/normalMotionSlipPointPatchField.C
-
 boundaryConditions: Templates for coded boundary conditions
 
 Files: linear.H                     // linear kinetics boundary condition
@@ -30,8 +23,7 @@ Files: linear.H                     // linear kinetics boundary condition
 coupledPatchInterpolation: User library for face to point interpolation
 over a coupled patch
 
-Files: coupledPatchInterpolation.H
-       CoupledPatchInterpolation.H
+Files: CoupledPatchInterpolation.H
        CoupledPatchInterpolation.C
 
 OFstreamMod: User library adds support for appending to an existing file; used by dissolCalc
@@ -42,5 +34,5 @@ Files: OFstreamMod.H
 dissolMotion: User library for mesh relaxation. Superseded by normalMotionSlip, but still used by surfRoughGen utility.
 
 Files: dissolMotionPointPatchVectorField.H
-dissolMotionPointPatchVectorField.C
+       dissolMotionPointPatchVectorField.C
 
